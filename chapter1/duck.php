@@ -1,12 +1,16 @@
 <?php
-interface FlyBehaivor{
+
+namespace Duck;
+
+use Duck\FlyBehaivor;
+/*interface FlyBehaivor{
   public function fly();
 }
 
 interface QuackBehaivor{
   public function quack();
 }
-
+*/
 abstract class Duck {
 
   protected $flyBehaivor;
@@ -39,7 +43,7 @@ abstract class Duck {
     $this->quackBehaivor = $qb;
   }
 }
-
+/*
 class FlyWithWings implements FlyBehaivor{
   public function fly(){
     echo 'Estoy volandooooo <br/>';
@@ -55,29 +59,12 @@ class FlyNoWay implements FlyBehaivor{
     echo 'No puedo volar :( <br/>';
   }
 }
+*/
 
-class Quack_c implements QuackBehaivor{
-  public function quack(){
-    echo 'Cuak Cuak <br/>';
-  }
-}
-
-Class MuteQuack implements QuackBehaivor{
-  public function quack(){
-    echo '...';
-  }
-}
-
-Class Squeak implements QuackBehaivor{
-  public function quack(){
-    echo 'squeak <br/>';
-  }
-}
-
-Class FlyRocketPowered implements FlyBehaivor
+/*Class FlyRocketPowered implements FlyBehaivor
 {
   public function fly()
   {
     echo 'Volando en un Rocket? <br/>';
   }
-}
+}*/

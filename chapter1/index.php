@@ -36,11 +36,14 @@ echo $animal->Greet();
 */
 
 
-
-
-
-
 include ('duck.php');
+include ('FlyBehaivor.php');
+include ('FlyWithWings.php');
+//include ('QuackBehaivor.php');
+include ('QuackSound.php');
 include ('duckSimulator.php');
-$llamado = new MiniDuckSimulator();
+
+use Duck\Test;
+
+$llamado = new Duck\Test\MiniDuckSimulator();
 exit('hola');
