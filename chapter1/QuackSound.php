@@ -1,22 +1,21 @@
 <?php
 
-namespace Duck\QuackBehaivor\QuackBehaivors;
+namespace Duck;
 
-include ('QuackBehaivor.php');
 
-class QuackSound implements Duck\QuackBehaivor\QuackBehaivor{
+class QuackSound implements QuackBehaivor{
   public function quack(){
     echo 'Cuak Cuak <br/>';
   }
 }
 
-Class MuteQuack implements Duck\QuackBehaivor\QuackBehaivor{
+Class MuteQuack implements QuackBehaivor{
   public function quack(){
     echo '...';
   }
 }
 
-Class Squeak implements Duck\QuackBehaivor\QuackBehaivor{
+Class Squeak implements QuackBehaivor{
   public function quack(){
     echo 'squeak <br/>';
   }

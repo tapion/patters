@@ -1,5 +1,5 @@
 <?php
-namespace Duck\FlyBehaivor;
+namespace Duck;
 
 interface FlyBehaivor{
   public function fly();

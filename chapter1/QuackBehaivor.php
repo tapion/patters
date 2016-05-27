@@ -1,6 +1,6 @@
 <?php
 
-namespace Duck\QuackBehaivor;
+namespace Duck;
 
 interface QuackBehaivor{
   public function quack();

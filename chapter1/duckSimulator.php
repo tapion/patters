@@ -1,14 +1,11 @@
 <?php
-namespace Duck\Test;
+namespace Duck;
 
-use Duck\FlyBehaivor\FlyBehaivors as FlyBehaivors;
-use Duck\QuackBehaivor as QuackBehaivors;
-use Duck;
 
-Class MallarDuck extends Duck\Duck{
+Class MallarDuck extends Duck{
   public function __construct(){
-    $this->quackBehaivor = new QuackBehaivors\QuackSound();
-    $this->flyBehaivor = new FlyBehaivors\FlyWithWings();
+    $this->quackBehaivor = new QuackSound();
+    $this->flyBehaivor = new FlyWithWings();
   }
 
   public function display(){
@@ -16,10 +13,10 @@ Class MallarDuck extends Duck\Duck{
   }
 }
 
-Class ModelDuck extends Duck\Duck{
+Class ModelDuck extends Duck{
   public function __construct(){
     $this->flyBehaivor = new FlyNoWay();
-    $this->quackBehaivor = new Quack_c();
+    $this->quackBehaivor = new QuackSound();
   }
 
   public function display()

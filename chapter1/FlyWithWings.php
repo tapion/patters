@@ -1,10 +1,10 @@
 <?php
 
-//namespace Duck\FlyBehaivor\FlyBehaivors;
+namespace Duck;
 
-use Duck\FlyBehaivor;
 
-class FlyWithWings implements Duck\FlyBehaivor\FlyBehaivor{
+
+class FlyWithWings implements FlyBehaivor{
   public function fly(){
     echo 'Estoy volandooooo <br/>';
   }
@@ -13,14 +13,14 @@ class FlyWithWings implements Duck\FlyBehaivor\FlyBehaivor{
   }
 }
 
-class FlyNoWay implements Duck\FlyBehaivor\FlyBehaivor{
+class FlyNoWay implements FlyBehaivor{
   public function fly()
   {
     echo 'No puedo volar :( <br/>';
   }
 }
 
-Class FlyRocketPowered implements Duck\FlyBehaivor\FlyBehaivor
+Class FlyRocketPowered implements FlyBehaivor
 {
   public function fly()
   {
